@@ -256,6 +256,10 @@ export const query = graphql`
         id
       }
     }
+    
+  
+
+
     suggestions: allShopifyProduct(
       limit: 3
       filter: { productType: { eq: $productType }, id: { ne: $id } }
